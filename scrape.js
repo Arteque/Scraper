@@ -41,7 +41,7 @@ const scrape = async () => {
     // Write the updated result to the JSON file
     fs.writeFileSync(filePath, JSON.stringify(dataToWrite, null, 2), "utf-8");
     console.log("Data has been updated and saved to apotheken.json");
-
+    return innerText.results.apotheken
     await browser.close();
 };
 
